@@ -56,7 +56,13 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+	writeFileAsync(fileName, data, (err) =>
+		err
+			? console.log(err)
+			: console.log("Success" + fileName + "has been generated.")
+	);
+}
 
 // function to initialize program
 function init() {}
