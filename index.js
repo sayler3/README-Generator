@@ -60,12 +60,25 @@ function writeToFile(fileName, data) {
 	writeFileAsync(fileName, data, (err) =>
 		err
 			? console.log(err)
-			: console.log("Success" + fileName + "has been generated.")
+			: console.log("Success! " + fileName + " has been generated.")
 	);
 }
 
 // function to initialize program
-function init() {}
+async function init() {
+    try{
+        // Prompt for questions
+        const userInput = await inquirer.prompt(questions);
+        // Pass response to generateMarkdown function
+        const markdownData = genrateMarkdown(userInput);
+        // give fileName a value
+        let fileName = "README.md";
+        // write file after reciving data
+        await writeToFile(fileName, markdownData);
+    } catch (err) {
+        console.log(err);
+    }
+}
 
 // function call to initialize program
 init();
