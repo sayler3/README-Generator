@@ -10,32 +10,38 @@ const questions = [
 	{
 		type: "input",
 		name: "title",
-		message: "What is the title of your project",
+        message: "What is the title of your project",
+        validate: validateInput,
 	},
 	{
 		type: "input",
 		name: "description",
-		message: "Please enter a description for your project",
+        message: "Please enter a description for your project",
+        validate: validateInput,
 	},
 	{
 		type: "input",
 		name: "installation",
-		message: "What are the installation instructions for your project",
+        message: "What are the installation instructions for your project",
+        validate: validateInput,
 	},
 	{
 		type: "input",
 		name: "usage",
-		message: "Enter usage information",
+        message: "Enter usage information",
+        validate: validateInput,
 	},
 	{
 		type: "input",
 		name: "contribution",
-		message: "Please enter contribution guidelines",
+        message: "Please enter contribution guidelines",
+        validate: validateInput,
 	},
 	{
 		type: "input",
 		name: "testInstruction",
-		message: "Please enter test instructions",
+        message: "Please enter test instructions",
+        validate: validateInput,
 	},
 	{
 		type: "list",
@@ -49,12 +55,14 @@ const questions = [
 		name: "username",
         message: "What is your GitHub username",
         default: "sayler3",
+        validate: validateInput,
 	},
 	{
 		type: "input",
 		name: "email",
         message: "What is your email address",
         default: "s.ayler@me.com",
+        validate: validateInput,
 	},
 ];
 
