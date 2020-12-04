@@ -41,17 +41,20 @@ const questions = [
 		type: "list",
 		name: "license",
 		message: "Pick a license",
-		choices: ["GNU", "Mozilla", "Apache", "MIT"],
+        choices: ["GNU", "Mozilla", "Apache", "MIT"],
+        default: "MIT",
 	},
 	{
 		type: "input",
 		name: "username",
-		message: "What is your GitHub username",
+        message: "What is your GitHub username",
+        default: "sayler3",
 	},
 	{
 		type: "input",
 		name: "email",
-		message: "What is your email address",
+        message: "What is your email address",
+        default: "s.ayler@me.com",
 	},
 ];
 
