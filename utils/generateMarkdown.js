@@ -23,7 +23,7 @@ function generateMarkdown(data) {
 				"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
 			liInfo = "[**MIT**](https://opensource.org/licenses/MIT)";
 			break;
-    }
+    };
     //returning template literal
 	return `# ${data.title}
     
@@ -62,6 +62,6 @@ function generateMarkdown(data) {
     Github Profile: [**@${data.username}**](https://github.com/${data.username})
     Email: [**${data.email}**]
     `;
-}
+};
 
 module.exports = generateMarkdown;

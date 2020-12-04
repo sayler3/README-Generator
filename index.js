@@ -5,7 +5,7 @@ const fs = require("fs");
 const writeFileAsync = util.promisify(fs.writeFile);
 const genrateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// array of questions for user prompt
 const questions = [
 	{
 		type: "input",
@@ -64,39 +64,40 @@ const questions = [
 	},
 ];
 
-// function to write README file
+// function to write README.md file
 function writeToFile(fileName, data) {
 	writeFileAsync(fileName, data, (err) =>
 		err
 			? console.log(err)
 			: console.log("Success! " + fileName + " has been generated.")
 	);
-}
+};
 
 // function to initialize program
 async function init() {
 	try {
 		// Prompt for questions
 		const userInput = await inquirer.prompt(questions);
-		// Pass response to generateMarkdown function
+		// Pass user response to generateMarkdown function
 		const markdownData = genrateMarkdown(userInput);
-		// give fileName a value
+		// give fileName a value for markDown file
 		let fileName = "README.md";
-		// write file after reciving data
+		// write file after reciving fileName and data
 		await writeToFile(fileName, markdownData);
 	} catch (err) {
+        // If an error accurs display that error
 		console.log(err);
 	}
-}
+};
 
-// funtion to validate if the user had answered the question
+// funtion to validate if the user has answered the question being prompted
 function valInput(input) {
 	if (input.trim() === "") {
 		console.log("Please add some text to answer the question");
 	} else {
 		return true;
 	}
-}
+};
 
 // function call to initialize program
 init();
