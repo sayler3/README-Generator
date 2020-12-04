@@ -3,8 +3,21 @@ function generateMarkdown(data) {
     // switch case for type of license used
     switch(data.license){
         case "GNU":
-            liBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/GPL-3.0)";
+            liBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPL--v3-blue.svg)](https://opensource.org/licenses/GPL-3.0)";
             liInfo = "[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)";
+            break;
+        case "Mozilla":
+            liBadge = "[![License: MPL-2.0](https://img.shields.io/badge/License-MPL--2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+            liInfo = "[**MPL-2.0**](https://opensource.org/licenses/MPL-2.0)";
+            break;
+        case "Apache":
+            liBadge = "[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg)](https://opensource.org/licenses/Apache-2.0)";
+            liInfo = "[**Apache-2.0**](https://opensource.org/licenses/Apache-2.0)";
+            break;
+        case "MIT":
+            liBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            liInfo = "[**MIT**](https://opensource.org/licenses/MIT)";
+            break;
     }
 	return `# ${data.title}
     
