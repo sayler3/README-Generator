@@ -23,8 +23,9 @@ function generateMarkdown(data) {
 				"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
 			liInfo = "[**MIT**](https://opensource.org/licenses/MIT)";
 			break;
-	}
-    return `# ${data.title}
+    }
+    //returning template literal
+	return `# ${data.title}
     
     ${liBadge}
 
@@ -55,7 +56,9 @@ function generateMarkdown(data) {
     ${data.testInstruction}
 
     ## Questions
+
     If you have any questions please use the contact information below to reach out.
+    
     Github Profile: [**@${data.username}**](https://github.com/${data.username})
     Email: [**${data.email}**]
     `;
