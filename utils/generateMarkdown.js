@@ -6,7 +6,7 @@ function generateMarkdown(data) {
 			liBadge =
 				"[![License: GPL v3](https://img.shields.io/badge/License-GPL--v3-blue.svg)](https://opensource.org/licenses/GPL-3.0)";
 			liInfo =
-				"[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)";
+				"[**GNU General Public License version 3**](https://opensource.org/licenses/GPL-3.0)";
 			break;
 		case "Mozilla":
 			liBadge =
