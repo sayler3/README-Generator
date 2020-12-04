@@ -52,7 +52,7 @@ function generateMarkdown(data) {
     ${data.contribution}
 
     ## Tests
-    ${data.testInstructions}
+    ${data.testInstruction}
 
     ## Questions
     If you have any questions please use the contact information below to reach out.
