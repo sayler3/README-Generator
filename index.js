@@ -22,7 +22,7 @@ const questions = [
 		type: "input",
 		name: "installation",
         message: "What are the installation instructions for your project",
-        
+        default: "N/A",
 	},
 	{
 		type: "input",
@@ -40,8 +40,8 @@ const questions = [
 		type: "input",
 		name: "testInstruction",
         message: "Please enter test instructions",
-        
-	},
+        default: "N/A",
+    },
 	{
 		type: "list",
 		name: "license",
