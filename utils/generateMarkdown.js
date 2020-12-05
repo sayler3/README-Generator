@@ -66,8 +66,8 @@ ${data.testInstruction}
 
 If you have any questions please use the contact information below to reach out.
 
-Github Profile: [**@${data.username}**](https://github.com/${data.username})
-Email: [**${data.email}**]
+Github Profile: [**${data.username}**](https://github.com/${data.username})
+Email: **${data.email}**
 `;
 };
 

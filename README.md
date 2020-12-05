@@ -47,5 +47,5 @@ At this time there are no test to be performed.
 
 If you have any questions please use the contact information below to reach out.
 
-Github Profile: [**@sayler3**](https://github.com/sayler3)
-Email: [**s.ayler@me.com**]
+Github Profile: [**sayler3**](https://github.com/sayler3)
+Email: **s.ayler@me.com**
