@@ -24,44 +24,51 @@ function generateMarkdown(data) {
 			liInfo = "[**MIT**](https://opensource.org/licenses/MIT)";
 			break;
     };
-    //returning template literal
-	return `# ${data.title}
-    
-    ${liBadge}
+//returning template literal
+return `# ${data.title}
 
-    ## Description
-    ${data.description}
+${liBadge}
 
-    ## Table of Contents
-    - [**Installation**](#installation)
-    - [**Usage**](#usage)
-    - [**License**](#license)
-    - [**Contributing**](#contributing)
-    - [**Tests**](#tests)
-    - [**Questions**](#questions)
-    
-    ## Installation
-    ${data.installation}
+## Description
 
-    ## Usage
-    ${data.usage}
+${data.description}
 
-    ## License
-    This project is licensed under the ${liInfo} license.
+## Table of Contents
 
-    ## Contributing
-    ${data.contribution}
+- [**Installation**](#installation)
+- [**Usage**](#usage)
+- [**License**](#license)
+- [**Contributing**](#contributing)
+- [**Tests**](#tests)
+- [**Questions**](#questions)
 
-    ## Tests
-    ${data.testInstruction}
+## Installation
 
-    ## Questions
+${data.installation}
 
-    If you have any questions please use the contact information below to reach out.
-    
-    Github Profile: [**@${data.username}**](https://github.com/${data.username})
-    Email: [**${data.email}**]
-    `;
+## Usage
+
+${data.usage}
+
+## License
+
+This project is licensed under the ${liInfo} license.
+
+## Contributing
+
+${data.contribution}
+
+## Tests
+
+${data.testInstruction}
+
+## Questions
+
+If you have any questions please use the contact information below to reach out.
+
+Github Profile: [**@${data.username}**](https://github.com/${data.username})
+Email: [**${data.email}**]
+`;
 };
 
 module.exports = generateMarkdown;
